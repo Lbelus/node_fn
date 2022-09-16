@@ -25,5 +25,9 @@ void test_print_list(node_t *head);
 void free_node(node_t *head);
 node_t *go_to_node(node_t *head, int pos);
 void remove_duplicate_on_node(node_t* head);
+node_t *split_node_on_pos(node_t *head, int len);
+int node_count(node_t *head);
+int recur_node_count(node_t *head, int count);
+
 
 #endif
