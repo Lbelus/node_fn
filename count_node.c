@@ -12,7 +12,6 @@ int node_count(node_t *head) {
     return count;
 }
 
-
 int recur_node_count(node_t *head, int count) {
 
     if(head == NULL){
@@ -21,19 +20,3 @@ int recur_node_count(node_t *head, int count) {
     count++;
     return recur_node_count(head->next, count); 
 } 
-
-node_t *split_node_on_pos(node_t *head, int pos) {  
-    int index = 0;
-    
-    if(head == NULL){return NULL;}
-    
-    while(index < pos){
-        head = head->next;
-        index++;
-    }
-
-    node_t *tmp = head->next;
-    head->next = NULL;
-
-    return tmp;
-}

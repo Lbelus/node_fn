@@ -1,6 +1,7 @@
 #include "node_header.h"
 
 void reverse_node_order(node_t **head) {
+    
     node_t *prev = NULL;
     node_t *current = *head;
     node_t *next = NULL;

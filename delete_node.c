@@ -41,21 +41,3 @@ void delete_node_on_pos(node_t **head, int pos) {
     prev->next = tmp->next;
     free(tmp);
 }
-
-
-/*
-void delete_node(node_t *head, node_t *node_to_delete) {
-    if(head == node_to_delete) {
-        if(head->next == NULL) {
-            return ;
-        }
-    }
-
-    head->value = head->next->value;
-    node_to_delete = head->next;
-    head->next = head->next->next;
-    free(node_to_delete);
-
-    return;
-}
-*/

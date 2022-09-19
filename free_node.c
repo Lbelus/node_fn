@@ -10,3 +10,14 @@ void free_node(node_t *head) {
         tmp = head; 
     }
 }
+
+void recur_free_node(node_t *head) {
+    
+    if(head == NULL){return;}
+    
+    node_t *tmp = head;
+    head = head->next;
+    free(tmp);
+
+    recur_free_node(head);
+}
