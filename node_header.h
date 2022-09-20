@@ -21,7 +21,7 @@ node_t *find_node_at_pos(node_t *head, int pos);
 node_t *find_node_at_key(node_t *head, int value);
 node_t *recur_find_node_at_key(node_t *head, int value);
 
-int node_top(node_t* head);
+int node_get_max(node_t* head);
 int node_get_min(node_t* head);
 void insert_after_node(node_t *node_to_insert, node_t *newnode);
 
@@ -39,6 +39,6 @@ int node_count(node_t *head);
 int recur_node_count(node_t *head, int count);
 void concatenate_llist(node_t* node_a, node_t* node_b);
 void recur_concatenate_llist(node_t* node_a, node_t* node_b);
-
+node_t *sort_ascending(node_t *head);
 
 #endif

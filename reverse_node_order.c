@@ -12,5 +12,6 @@ void reverse_node_order(node_t **head) {
         prev = current;
         current = next;  
     }
+    
     *head = prev;
 }

@@ -10,9 +10,8 @@ void recur_concatenate_llist(node_t* node_a, node_t* node_b) {
     }
 }
 
-
 void concatenate_llist(node_t* node_a, node_t* node_b) {
-    while(node_a != NULL){
+    while(node_a != NULL) {
         node_a = node_a->next;
         if(node_a->next == NULL){
             node_a->next = node_b;
@@ -20,8 +19,6 @@ void concatenate_llist(node_t* node_a, node_t* node_b) {
         }
     }
 }
-
-
 
 /* append from list 
     int index = 0;
